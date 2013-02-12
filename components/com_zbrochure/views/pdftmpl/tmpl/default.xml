@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="zBrochure Template PDF">
+		<help />
+		<message>
+			<![CDATA[View to dynamically generate a PDF from a template]]>
+		</message>
+	</layout>
+
+</metadata>

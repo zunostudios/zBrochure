@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>com_zbrochure</name>
+	<author>Zuno Studios</author>
+	<creationDate>April 2012</creationDate>
+	<copyright>(C) 2012 Zuno Enterprises, Inc. All rights reserved.	</copyright>
+	<license>GNU General Public License version 2 or later; see	LICENSE.txt</license>
+	<authorEmail>zunous@zunostudios.com</authorEmail>
+	<authorUrl>www.zunostudios.com</authorUrl>
+	<version>2.5.0</version>
+	<description>COM_ZBROCHURE_XML_DESC</description>
+
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>zbrochure.php</filename>
+		<filename>metadata.xml</filename>
+		<folder>assets</folder>
+		<folder>content</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>templates</folder>
+		<folder>views</folder>
+	</files>
+	
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB.com_zbrochure.ini
+		</language>
+	</languages>
+	
+	<administration>
+		<files folder="admin">
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>zbrochure.php</filename>
+			<filename>zbrochure.xml</filename>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB.com_zbrochure.ini
+			</language>
+		</languages>
+	</administration>
+</extension>
+

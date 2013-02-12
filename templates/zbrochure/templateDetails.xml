@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+
+<extension version="1.7" type="template" client="site">
+	
+	<name>zBrochure</name>
+	<creationDate>January 2011</creationDate>
+	<author>Zuno Studios</author>
+	<authorEmail>zunous@zunostudios.com</authorEmail>
+	<authorUrl>http://zunostudios.com</authorUrl>
+	<copyright>Copyright (C) 2011-2013 Zuno Enterprises, Inc. All rights reserved.</copyright>
+	<license>LICENSE.txt</license>
+	<version>1.7.0</version>
+	<description>Template for zBrochure Generator</description>
+
+	<files>
+	
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>favicon.ico</filename>
+		<filename>modal.php</filename>
+		<filename>popup.php</filename>
+		<filename>print.php</filename>
+		
+	</files>
+
+	<positions>
+		
+		<position>main_menu</position>		
+		<position>user_menu_logged_out</position>
+		<position>user_menu_logged_in</position>
+		<position>utility_module</position>
+		<position>search</position>
+		<position>marquee</position>
+		<position>cta</position>
+		<position>top</position>
+		<position>top_columns</position>
+		<position>content_top</position>
+		<position>breadcrumbs</position>
+		<position>left</position>
+		<position>right</position>		
+		<position>bottom</position>
+		<position>bottom_columns</position>
+		<position>content_bottom</position>
+		<position>footer</position>
+		<position>copyright</position>
+		<position>debug</position>
+		
+	</positions>
+	
+	<languages>
+		<language tag="en-GB">en-GB.tpl_zbrochure.ini</language>
+	</languages>
+	
+	<administration>
+		
+		<languages folder="admin">
+			<language tag="en-GB">en-GB.tpl_zbrochure.ini</language>
+		</languages>
+		
+	</administration>
+	
+</extension>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="zBrochure Plans">
+		<help />
+		<message>
+			<![CDATA[Displays a listing of Plans]]>
+		</message>
+	</layout>
+
+</metadata>

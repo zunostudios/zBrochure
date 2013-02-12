@@ -1,0 +1,230 @@
+/** Start YUI Resets **/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+q:before,q:after{content:'';}
+abbr,acronym{border:0}
+*{background-repeat:no-repeat}
+/** End YUI Resets **/
+
+body{background-color:#EFEFEF;background-image:url(../images/bg-dark-diag.gif);background-repeat:repeat;color:#555;font-family:Arial, Helvetica,sans-serif;font-size:14px;width:100%}
+body.modal-win{background-color:#FFF;background-image:none;}
+
+textarea, input{font-family:Arial, Helvetica,sans-serif;font-size:12px}
+
+abbr{border-bottom:1px dotted #333;cursor:help}
+
+p{margin-bottom:20px}
+ol{list-style:outside decimal;margin:0 0 0 15px}
+ul{}
+li{margin:0 0 10px}
+
+a:link, a:visited{color:#1fb7ff;text-decoration:none}
+a:hover{text-decoration:underline}
+
+h1,h2,h3,h4,h5,h6{color:#595959;line-height:normal;margin-bottom:10px}
+h1{font-size:28px}
+h2{font-size:24px}
+h3{font-size:20px}
+h4{font-size:18px}
+h5{font-size:16px}
+
+.fl{float:left}
+.fr{float:right}
+.sm{font-size:11px}
+.md{font-size:1.1em}
+.lg{font-size:1.3em}
+.clear{clear:both}
+.dk-blue{color:#0B4358}
+.block{display:block}
+.nofloat{float:none !important}
+.bold{font-weight:bold}
+hr.no-show{display:none}
+.mar-b{margin-bottom:20px}
+.mar-r{margin-right:20px}
+.mar-l{margin-left:20px}
+.mar-t{margin-top:20px}
+.pad-t{padding-top:20px}
+.lt-gray{color:#CCC}
+.b-left{border-left:3px solid #FFF}
+.b-right{border-right:3px solid #FFF}
+.b-top{border-top:3px solid #E1E3E6}
+.b-bottom{border-bottom:3px solid #E1E3E6}
+.b-thin-bottom{border-bottom:1px solid #E1E3E6}
+.lt-blue{color:#41B8ED}
+.pad{padding:0 10px 0 0}
+.caps{text-transform:uppercase}
+.center{margin:0 auto}
+
+/* Wrapper Styles */
+.wrapper{margin:0 auto;width:1024px}
+	.wrapper > .inner{padding:20px 0}
+	
+.view-wrapper{background-color:#FFF;border-radius:0 0 5px 5px;margin:0 auto 50px;padding:0;position:relative;width:1024px;z-index:0}
+	.view-wrapper > .inner{padding:20px}
+/* Header Styles */
+#header{
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#23211b), to(#000));
+	background-image: -webkit-linear-gradient(top, #23211b, #000);
+	background-image:    -moz-linear-gradient(top, #23211b, #000);
+	background-image:     -ms-linear-gradient(top, #23211b, #000);
+	background-image:      -o-linear-gradient(top, #23211b, #000);
+	padding:0 0 10px 0;
+	color:#CCC;
+}
+
+#sub-header{background-color:#000;position:relative;z-index:1}
+#top-bar{background-color:#FFF;border-radius:5px 5px 0 0;padding:10px 20px;overflow:hidden}
+#top-bar h1{margin:0;font-size:20px;float:left}
+
+#logo-box a{background-image:url(../images/bol-logo.png);background-position:center center;display:block;float:left;height:82px;text-indent:-9999px;width:160px}
+
+#header-sep{background-image:url(../images/header-separator.jpg);background-position:center center;float:left;height:82px;margin:0 10px;width:2px}
+
+#tagline{background-image:url(../images/brochure-generator.png);background-position:center 38px;float:left;height:82px;text-indent:-9999px;width:220px}
+
+#content-wrapper{margin:0 auto;padding:0}
+
+/* Main Menu Styles */
+#main-menu{float:right;font-size:12px;clear:right}
+#main-menu .inner{}
+#main-menu ul{}
+#main-menu li{float:left;padding:10px;background-color:#FAFAFA;position:relative;margin:0}
+	#main-menu li ul{overflow:hidden}
+#main-menu li:first-child{border-radius:5px 0 0 5px}
+#main-menu li:last-child{border-radius:0 5px 5px 0}
+	#main-menu li li:last-child{border-radius:0}
+#main-menu a:link, #main-menu a:visited{color:#999;text-decoration:none}
+#main-menu a:hover{text-decoration:underline}
+
+#main-menu ul ul ul{margin:0 0 0 10px;position:relative}
+
+#main-menu li ul{position:absolute;left:-9999px;z-index:2002}
+#main-menu li:hover ul{left:0}
+#main-menu li li{float:none;padding:0}
+	#main-menu li li a:link,
+	#main-menu li li a:visited{display:block;padding:10px;width:100%}
+	#main-menu li li a:hover{background-color:#EFEFEF;text-decoration:none}
+
+#utility-menu{float:right;overflow:hidden;margin:10px 0;font-size:11px}
+#utility-menu ul{overflow:hidden;float:left;line-height:16px}
+#utility-menu .group-label{float:left}
+.group-label label{line-height:16px;margin:3px 5px 3px 0;display:inline-block}
+#utility-menu input,#utility-menu select{font-size:10px}
+#utility-menu li{float:left;margin:3px 5px 3px 0;border-right:1px solid #666666;padding:0 5px 0 0}
+#utility-menu li:last-child{border-right:none;}
+#utility-menu a:link, #utility-menu a:visited{color:#FFF;text-decoration:none}
+#utility-menu a:hover{color:#CCC}
+
+.inputbox,
+.login-fields input,
+#member-registration input{background-color:#FFF;background-position:center top;background-repeat:repeat-x;border:1px solid #999;border-radius:4px;padding:6px}
+
+.login-description{margin:0 0 20px 0}
+.login-container{overflow:hidden;float:left;margin:0 30px 0 0}
+	.login-container button{float:right}
+	
+.login-fields{margin:0 0 15px;overflow:hidden}
+	.login-fields label{display:block;margin:0 0 3px 0}
+	.login-fields input{float:left}
+
+.login-options{float:left;text-align:left;width:160px;font-size:12px;margin:18px 0 0 0}
+
+
+	#member-registration dd{margin:0 0 10px}
+	
+#system-message dd{padding:10px 20px;border-radius:5px;background-color:#EFEFEF}
+.modal-win #system-message dd{border-radius:0}
+#system-message dt{display:none}
+#system-message li{margin:0}
+
+#system-message dd.message{background-color:#8AD725;color:#FFF;text-shadow:0 -1px 0px #5D9119}
+
+ul.menu ul li a{padding:0 10px 0 20px}
+
+a:link.btn,a:visited.btn{color:#FFF;text-decoration:none;display:inline-block}
+.btn{border-radius:3px;background-color:#CCC;font-size:12px;padding:5px 10px}
+
+.btn.save-btn{background-color:#8AD725;margin:0 0 0 5px}
+.btn.build-bro-btn{background-color:#1FB7FF}
+
+.add-btn{background-color:#1FB7FF}
+
+#top-bar .btn-container{float:right}
+.bottom-btn-container{text-align:right;margin:20px 0 0 0}
+
+.btn{border:none;cursor:pointer;color:#FFF}
+.form-row.btn-container{float:right}
+
+.inputbox, form input[type=text], form input[type=password], form input[type=email], form textarea{border:1px solid #CCC;border-radius:4px;padding:6px}
+
+form dt{margin:0 0 5px 0}
+form dt label{font-weight:bold;margin:0 0 0 5px}
+form dd{margin:0 0 20px 0}
+
+.btn{border:none;border-radius:3px;background-color:#CCC;color:#FFF;font-size:12px;padding:8px 10px;position:relative}
+a.btn{text-decoration:none}
+
+.icon-btn span{padding:0 0 0 22px;}
+
+span.icon{display:block;position:absolute;background-image:url(../images/btn-icons.png);background-repeat:no-repeat;background-position:0 0;width:18px;height:18px;left:10px;top:50%;margin-top:-9px}
+
+.icon-only-btn{padding:5px}
+.icon-only-btn span{background-image:url(../images/btn-icons.png);background-repeat:no-repeat;background-position:0 0;width:18px;height:18px;text-indent:-9999px;display:block}
+
+#login-form{float:left;line-height:16px}
+.login-greeting, .logout-button{float:left;display:inline-block;margin:3px 5px 3px 0}
+.logout-button{border-right:1px solid #666666;padding:0 5px 0 0}
+.logout-button button{border:none;background-color:transparent;color:#FFF;cursor:pointer;font-family:Arial, Helvetica,sans-serif;margin:0;padding:0}
+.logout-button button:hover{color:#CCC}
+
+.preview-btn{display:block;width:70px;color:#FFF}
+
+
+.edit-btn,
+.edit-icon-btn,
+.save-btn{background-color:#8AD725}
+
+.duplicate-btn,
+.duplicate-icon-btn,
+.build-bro-btn,
+.add-btn,
+.plus-icon-btn,
+.minus-icon-btn,
+.minus-btn{background-color:#1FB7FF}
+
+.delete-btn,
+.delete-icon-btn{background-color:#CE1D06}
+
+.cancel-btn{background-color:#888}
+
+
+.plus-icon-btn span,
+.add-btn span.icon{background-position:0 -302px}
+
+
+.minus-icon-btn span,
+.minus-btn span.icon{background-position:0 -352px}
+
+.cancel-btn span.icon{background-position:0 -242px}
+
+.delete-btn span.icon,
+.delete-icon-btn span{background-position:0 -93px}
+
+.duplicate-btn span.icon,
+.duplicate-icon-btn span{background-position:0 0}
+
+.edit-btn span.icon,
+.edit-icon-btn span{background-position:0 -44px}
+
+.preview-btn span.icon{background-position:0 -142px}
+.save-btn span.icon{background-position:0 -191px}
+
+.profile dt{margin:0 0 5px 0;font-weight:bold}
+.profile dd{margin:0 0 20px 0}
+
+label span{color:#FF3300}

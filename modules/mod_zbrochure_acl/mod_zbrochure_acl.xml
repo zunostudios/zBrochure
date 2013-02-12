@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="2.5"
+	client="site"
+	method="upgrade">
+	
+	<name>mod_zbrochure_acl</name>
+	<author>Zuno Studios</author>
+	<creationDate>May 2012</creationDate>
+	<copyright>Copyright (C) 2012 Zuno Enterprises, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>zunous@zunostudios.com</authorEmail>
+	<authorUrl>www.zunostudios.com</authorUrl>
+	<version>2.5.0</version>
+	<description>Allows users to change their active team for editing</description>
+	
+	<files>
+		<filename module="mod_zbrochure_acl">mod_zbrochure_acl.php</filename>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>mod_zbrochure_acl.xml</filename>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">en-GB.mod_zbrochure_acl.ini</language>
+		<language tag="en-GB">en-GB.mod_zbrochure_acl.sys.ini</language>
+	</languages>
+	
+	
+	<config>
+		<fields name="params">
+			
+			<fieldset
+				name="basic">
+
+				<field
+					name="select_label"
+					type="text"
+					label="Select Label"
+					description="Label for the team select field" />
+
+				<field
+					name="show_label"
+					type="radio"
+					default="0"
+					label="Show label?"
+					description="Show label?">
+					<option
+						value="0">NO</option>
+					<option
+						value="1">YES</option>
+				</field>
+				
+				<field
+					name="redirect"
+					type="menuitem"
+					disable="separator"
+					label="Redirect"
+					description="The page to redirect to once the active team has changed" >
+				</field>
+				
+			</fieldset>
+			
+			<fieldset
+				name="advanced">
+
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="0"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+	
+			</fieldset>
+		
+			
+		</fields>
+		
+		
+		
+	</config>
+</extension>

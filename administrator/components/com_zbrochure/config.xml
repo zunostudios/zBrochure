@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+
+	<fieldset
+		name="COM_ZBROCHURE_CONFIG_ACL"
+		label="COM_ZBROCHURE_CONFIG_ACL"
+		description="COM_ZBROCHURE_CONFIG_ACL_DESC">
+
+		<field name="team_parent"
+			type="usergroup"
+			label="COM_ZBROCHURE_CONFIG_TEAM_PARENT"
+			description="COM_ZBROCHURE_CONFIG_TEAM_PARENT_DESC"
+			class="inputbox"
+			size="1" />
+			
+		<field name="admin_group"
+			type="usergroup"
+			label="COM_ZBROCHURE_CONFIG_ADMIN_GROUP"
+			description="COM_ZBROCHURE_CONFIG_ADMIN_GROUP_DESC"
+			class="inputbox"
+			size="1" />
+		
+	</fieldset>
+	
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+	>
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			validate="rules"
+			filter="rules"
+			component="com_helloworld"
+			section="component"
+		/>
+	</fieldset>
+	
+	<fieldset
+		name="COM_ZBROCHURE_CONFIG_USERS"
+		label="COM_ZBROCHURE_CONFIG_USERS"
+		description="COM_ZBROCHURE_CONFIG_USERS_DESC">
+		
+		<field
+			name="email_from_name"
+			type="text"
+			label="COM_ZBROCHURE_FROM_NAME"
+			description="COM_ZBROCHURE_FROM_NAME_DESC"
+		/>
+		
+		<field
+			name="email_from_email"
+			type="text"
+			label="COM_ZBROCHURE_FROM_EMAIL"
+			description="COM_ZBROCHURE_FROM_EMAIL_DESC"
+		/>
+		
+		<field
+			name="email_subject"
+			type="text"
+			label="COM_ZBROCHURE_EMAIL_SUBJECT"
+			description="COM_ZBROCHURE_EMAIL_SUBJECT_DESC"
+		/>
+		
+		<field
+			name="email_body"
+			type="textarea"
+			label="COM_ZBROCHURE_EMAIL_BODY"
+			description="COM_ZBROCHURE_EMAIL_BODY_DESC"
+		/>
+		
+	</fieldset>
+	
+	<fieldset
+		name="COM_ZBROCHURE_CONFIG_BROS"
+		label="COM_ZBROCHURE_CONFIG_BROS"
+		description="COM_ZBROCHURE_CONFIG_BROS_DESC">
+
+		<field
+			name="bro_thumb_output_format"
+			type="list"
+			label="COM_ZBROCHURE_THUMB_OUTPUT_FORMAT"
+			description="COM_ZBROCHURE_THUMB_OUTPUT_FORMAT_DESC"
+			default="jpg"
+			class="inputbox">
+				<option value="jpg">JPG</option>
+				<option value="png">PNG</option>
+				<option value="gif">GIF</option>
+		</field>
+		
+		<field
+			name="bro_thumb_width"
+			type="text"
+			label="COM_ZBROCHURE_THUMB_OUTPUT_WIDTH"
+			description="COM_ZBROCHURE_THUMB_OUTPUT_WIDTH_DESC"
+			default="120"
+		/>
+		
+		<field
+			name="bro_thumb_jpg_quality"
+			type="text"
+			label="COM_ZBROCHURE_THUMB_JPG_QUALITY"
+			description="COM_ZBROCHURE_THUMB_JPG_QUALITY_DESC"
+			default="60"
+		/>
+		
+		<field
+			name="bro_thumb_background_color"
+			type="text"
+			label="COM_ZBROCHURE_THUMB_BACKGROUND_COLOR"
+			description="COM_ZBROCHURE_THUMB_BACKGROUND_COLOR_DESC"
+			default="FFFFFF"
+		/>
+		
+		<field
+			name="bro_thumb_grayscale"
+			type="list"
+			label="COM_ZBROCHURE_THUMB_GRAYSCALE"
+			description="COM_ZBROCHURE_THUMB_GRAYSCALE_DESC"
+			default="0"
+			class="inputbox">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+		</field>
+		
+		<field name="spacer1"
+			type="spacer"
+			hr="true"
+			/>
+		
+		<field name="brostyles" type="spacer" class="spacer"
+					label="COM_ZBROCHURE_CONFIG_STYLES_LABEL"
+			/>
+		
+		<field name="packagestyles" type="spacer" class="spacer"
+					label="COM_ZBROCHURE_CONFIG_STYLES_PACKAGE_LABEL"
+			/>
+		
+		<field
+			name="package_styles_table"
+			type="text"
+			size="150"
+			default="border-collapse:collapse;border-spacing:0;"
+			label="COM_ZBROCHURE_CONFIG_STYLES_PACKAGE_TABLE_LABEL"/>
+			
+		<field
+			name="package_styles_thead_th"
+			type="text"
+			size="150"
+			default="background-color:#666666;color:#FFFFFF;border-bottom:1px solid #FFFFFF;text-align:center;"
+			label="COM_ZBROCHURE_CONFIG_STYLES_PACKAGE_THEAD_TH_LABEL"/>
+			
+		<field
+			name="package_styles_th_td"
+			type="text"
+			size="150"
+			default="font-size:10pt;padding:3px 5px;border-right:1px solid #FFFFFF;min-width:100px;"
+			label="COM_ZBROCHURE_CONFIG_STYLES_PACKAGE_TH_TD_LABEL"/>
+		
+		<field
+			name="package_styles_alt_0_td"
+			type="text"
+			size="150"
+			default="background-color:#EFEFEF;"
+			label="COM_ZBROCHURE_CONFIG_STYLES_PACKAGE_ALT_0_TD_LABEL"/>
+			
+		<field
+			name="package_styles_alt_1_td"
+			type="text"
+			size="150"
+			default="background-color:#FFFFFF;"
+			label="COM_ZBROCHURE_CONFIG_STYLES_PACKAGE_ALT_1_TD_LABEL"/>
+			
+		<field
+			name="package_styles_td_package_label"
+			type="text"
+			size="150"
+			default="min-width:150px;"
+			label="COM_ZBROCHURE_CONFIG_STYLES_PACKAGE_PACKAGE_LABEL_TD_LABEL"/>
+		
+		<field
+			name="package_styles_td_plan_item"
+			type="text"
+			size="150"
+			default="text-align:center;"
+			label="COM_ZBROCHURE_CONFIG_STYLES_PACKAGE_PACKAGE_PLAN_ITEM_TD_LABEL"/>
+		
+		<field
+			name="package_styles_header_row_td"
+			type="text"
+			size="150"
+			default="background-color:#666666;color:#FFFFFF;"
+			label="COM_ZBROCHURE_CONFIG_STYLES_PACKAGE_HEADER_ROW_TD_LABEL"/>
+		
+		<field
+			name="package_styles_tfoot_th"
+			type="text"
+			size="150"
+			default="font-size:9pt;"
+			label="COM_ZBROCHURE_CONFIG_STYLES_PACKAGE_TFOOT_TH_LABEL"/>
+			
+		<field
+			name="package_styles_empty_cell"
+			type="text"
+			size="150"
+			default="background-color:#FFFFFF;"
+			label="COM_ZBROCHURE_CONFIG_STYLES_PACKAGE_EMPTY_TD_LABEL"/>
+		
+	</fieldset>
+	
+	<fieldset
+		name="COM_ZBROCHURE_CONFIG_CLIENTS"
+		label="COM_ZBROCHURE_CONFIG_CLIENTS"
+		description="COM_ZBROCHURE_CONFIG_CLIENTS_DESC">
+
+		<field
+			name="client_file_path"
+			type="text"
+			size="50"
+			default="media/zbrochure/clients"
+			label="COM_ZBROCHURE_CLIENT_FIELD_PATH_FILE_FOLDER_LABEL"
+			description="COM_ZBROCHURE_CLIENT_FIELD_PATH_FILE_FOLDER_DESC" />
+			
+		<field
+			name="broker_file_path"
+			type="text"
+			size="50"
+			default="media/zbrochure/brokers"
+			label="COM_ZBROCHURE_BROKER_FIELD_PATH_FILE_FOLDER_LABEL"
+			description="COM_ZBROCHURE_BROKER_FIELD_PATH_FILE_FOLDER_DESC" />		
+
+	</fieldset>
+
+	<fieldset
+		name="COM_ZBROCHURE_CONFIG_MEDIAMANAGER"
+		label="COM_ZBROCHURE_CONFIG_MEDIAMANAGER"
+		description="COM_ZBROCHURE_CONFIG_MEDIAMANAGER_DESC">
+
+		<field
+			name="asset_file_path"
+			type="text"
+			size="50"
+			default="media/zbrochure/images/library"
+			label="COM_ZBROCHURE_MEDIAMANAGER_FIELD_PATH_FILE_FOLDER_LABEL"
+			description="COM_ZBROCHURE_MEDIAMANAGER_FIELD_PATH_FILE_FOLDER_DESC" />
+
+	</fieldset>
+
+</config>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="zbrochure">
+	
+	<name>plg_content_client</name>
+	<author>Zuno Studios</author>
+	<creationDate>May 2012</creationDate>
+	<copyright>Copyright (C) 2012 Zuno Enterprises, Inc. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>zunous@zunostudios.com</authorEmail>
+	<authorUrl>www.zunostudios.com</authorUrl>
+	<version>2.5.0</version>
+	<description>Replaces client variables in zBrochure items</description>
+	
+	<files>
+		<filename plugin="client">client.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<config>
+		
+	</config>
+	
+</extension>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="zBrochure Broker">
+		<help />
+		<message>
+			<![CDATA[Displays a Broker]]>
+		</message>
+	</layout>
+
+</metadata>
